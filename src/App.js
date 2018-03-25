@@ -37,6 +37,7 @@ class App extends Component {
             } 
       if(txt.includes("Ready") || txt.includes("ready"))
       {
+        console.log("It is ready");
         {this.bottom()}
       }else if(txt.includes("Next") || txt.includes("next") || txt.includes("ext"))
       {
@@ -58,7 +59,7 @@ class App extends Component {
   bottom() {
     var body = document.body; // For Safari
     var html = document.documentElement; // Chrome, Firefox, IE and Opera places the overflow at the html level, unless else is specified. Therefore, we use the documentElement property for these browsers
-    
+    console.log("I am here");
     body.scrollTop += 1000;
     html.scrollTop += 1000;
     document.getElementById('name').style.display = 'block';
