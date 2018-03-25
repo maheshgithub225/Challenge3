@@ -102,8 +102,7 @@ class App extends Component {
           <h2>Welcome to React</h2>
           <button onClick={this.listening.bind(this)}> Click here to record </button>
         </div>
-        <div>{this.init()}</div>
-        
+          <div>{this.init()}</div>
       </div>
     );
   }
